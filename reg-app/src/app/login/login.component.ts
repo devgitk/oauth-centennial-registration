@@ -116,7 +116,7 @@ export class LoginComponent implements OnInit {
           console.log(data)
         if(data.success) {
           console.log('success')
-            this.flashMessage.show('You are now registered! ', {cssClass: 'alert-success', timeout: 3000});
+            this.flashMessage.show('You are now authenticated! ', {cssClass: 'alert-success', timeout: 3000});
             const navigationExtras: NavigationExtras = {state: {micName:micName}};
             this.router.navigate(['dashboard'],navigationExtras);
           } else {
@@ -227,7 +227,7 @@ export class LoginComponent implements OnInit {
         this.flashMessage.show('You are now logged in!' + { cssClass: 'alert-success', timeout: 5000 });
         this.router.navigate(['dashboard', data.user]);
       } else {
-        this.flashMessage.show(data.msg, { cssClass: 'alert-danger', timeout: 5000 });
+        //this.flashMessage.show(data.msg, { cssClass: 'alert-danger', timeout: 5000 });
         this.router.navigate(['login']);
       }
     });
