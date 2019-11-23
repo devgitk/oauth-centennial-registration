@@ -32,7 +32,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<app-navbar></app-navbar>\n<div class=\"container\">\n  <flash-messages></flash-messages>\n  <router-outlet></router-outlet>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<app-navbar></app-navbar>\r\n<div class=\"container\">\r\n  <flash-messages></flash-messages>\r\n  <router-outlet></router-outlet>\r\n</div>");
 
 /***/ }),
 
@@ -45,7 +45,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n<h2 class=\"page-header\">Welcome to the Centennial College! {{micName}}</h2>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("\r\n<h2 class=\"page-header\">Welcome to the Centennial College! {{micName}}</h2>\r\n");
 
 /***/ }),
 
@@ -58,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"jumbotron text-center\">\n    <h1>Centennial College</h1>\n    <p class=\"lead\">Welcome to the Centennial College!</p>\n    <div>\n      <a class=\"btn btn-primary\" [routerLink]=\"['/register']\">Register</a> &nbsp; &nbsp;<a class=\"btn btn-dark\" [routerLink]=\"['/login']\">Login</a>\n    </div>\n  </div>\n  \n  <div class=\"row\">\n    <div class=\"col-md-4\">\n      <h3>Student Login</h3>\n      <p>Student can login with registered credentials</p>\n    </div>\n  </div>\n  ");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"jumbotron text-center\">\r\n    <h1>Centennial College</h1>\r\n    <p class=\"lead\">Welcome to the Centennial College!</p>\r\n    <div>\r\n      <a class=\"btn btn-primary\" [routerLink]=\"['/register']\">Register</a> &nbsp; &nbsp;<a class=\"btn btn-dark\" [routerLink]=\"['/login']\">Login</a>\r\n    </div>\r\n  </div>\r\n  \r\n  <div class=\"row\">\r\n    <div class=\"col-md-4\">\r\n      <h3>Student Login</h3>\r\n      <p>Student can login with registered credentials</p>\r\n    </div>\r\n  </div>\r\n  ");
 
 /***/ }),
 
@@ -71,7 +71,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<h2 class=\"page-header\" >Login</h2>\n<form class=\"form-signin\" (submit)=\"onLoginSubmit()\">\n        <div class=\"form-group\">\n          <label for=\"Username\">Student No.:</label>\n          <input type=\"text\" class=\"form-control\" placeholder=\"Enter Username\" [(ngModel)]=\"username\" name=\"username\">\n        </div>\n        <div class=\"form-group\">\n          <label for=\"Password\">Password:</label>\n          <input type=\"password\" class=\"form-control\" placeholder=\" Enter Password\" [(ngModel)]=\"password\" name=\"password\">\n        </div>          \n        <input class=\"btn btn-lg btn-primary\" type=\"submit\" value=\"Login\"> &nbsp; &nbsp;\n        <button (click)=\"signIn()\" class=\"btn btn-lg btn-primary\" >Centennial College - Sign In</button>\n</form>\n<div class=\"container\">\n    <div class=\"form-group\">\n        <pre id=\"json\"></pre>\n    </div>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<h2 class=\"page-header\" >Login</h2>\r\n<form class=\"form-signin\" (submit)=\"onLoginSubmit()\">\r\n        <div class=\"form-group\">\r\n          <label for=\"Username\">Student No.:</label>\r\n          <input type=\"text\" class=\"form-control\" placeholder=\"Enter Username\" [(ngModel)]=\"username\" name=\"username\">\r\n        </div>\r\n        <div class=\"form-group\">\r\n          <label for=\"Password\">Password:</label>\r\n          <input type=\"password\" class=\"form-control\" placeholder=\" Enter Password\" [(ngModel)]=\"password\" name=\"password\">\r\n        </div>          \r\n        <input class=\"btn btn-lg btn-primary\" type=\"submit\" value=\"Login\"> &nbsp; &nbsp;\r\n        <button (click)=\"signIn()\" class=\"btn btn-lg btn-primary\" >Centennial College - Sign In</button>\r\n</form>\r\n<div class=\"container\">\r\n    <div class=\"form-group\">\r\n        <pre id=\"json\"></pre>\r\n    </div>\r\n</div>\r\n");
 
 /***/ }),
 
@@ -84,7 +84,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<nav class=\"navbar navbar-expand-md navbar-dark bg-dark fixed-top\">\n        <a class=\"navbar-brand\" href=\"#\">Centennial College</a>\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarsExampleDefault\" aria-controls=\"navbarsExampleDefault\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n          <span class=\"navbar-toggler-icon\"></span>\n        </button>\n  \n        <div class=\"collapse navbar-collapse\" id=\"navbarsExampleDefault\">\n          <ul class=\"navbar-nav ml-auto\">\n            <li class=\"nav-item\" *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\">\n              <a class=\"nav-link\" [routerLink]=\"['/dashboard']\">Dashboard </a>\n            </li>         \n            <li class=\"nav-item\" *ngIf=\"!authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\">\n              <a class=\"nav-link\" [routerLink]=\"['/login']\">Login </a>\n            </li>\n            <li class=\"nav-item\" *ngIf=\"!authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\">\n              <a class=\"nav-link\" [routerLink]=\"['/register']\">Register</a>\n            </li>\n            <li class=\"nav-item\" *ngIf=\"authService.loggedIn()\"><a class=\"nav-link\" (click)=\"onLogoutClick()\" href=\"#\">Logout</a>\n            </li>\n          </ul>\n        </div>\n      </nav>");
+/* harmony default export */ __webpack_exports__["default"] = ("<nav class=\"navbar navbar-expand-md navbar-dark bg-dark fixed-top\">\r\n        <a class=\"navbar-brand\" href=\"#\">Centennial College</a>\r\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarsExampleDefault\" aria-controls=\"navbarsExampleDefault\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n          <span class=\"navbar-toggler-icon\"></span>\r\n        </button>\r\n  \r\n        <div class=\"collapse navbar-collapse\" id=\"navbarsExampleDefault\">\r\n          <ul class=\"navbar-nav ml-auto\">\r\n            <li class=\"nav-item\" *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\">\r\n              <a class=\"nav-link\" [routerLink]=\"['/dashboard']\">Dashboard </a>\r\n            </li>         \r\n            <li class=\"nav-item\" *ngIf=\"!authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\">\r\n              <a class=\"nav-link\" [routerLink]=\"['/login']\">Login </a>\r\n            </li>\r\n            <li class=\"nav-item\" *ngIf=\"!authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\">\r\n              <a class=\"nav-link\" [routerLink]=\"['/register']\">Register</a>\r\n            </li>\r\n            <li class=\"nav-item\" *ngIf=\"authService.loggedIn()\"><a class=\"nav-link\" (click)=\"onLogoutClick()\" href=\"#\">Logout</a>\r\n            </li>\r\n          </ul>\r\n        </div>\r\n      </nav>");
 
 /***/ }),
 
@@ -97,7 +97,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div>\n    <h2 class=\"page-header\">Register</h2>\n    <form (submit)=\"onRegisterSubmit()\" >\n      <div class=\"form-group\">\n        <label for=\"name\">Name</label>\n        <input type=\"text\" [(ngModel)]=\"name\" name=\"name\" class=\"form-control\" id=\"name\" placeholder=\"Enter Name\">\n      </div>\n      <div class=\"form-group\">\n        <label for=\"username\">Student No.</label>\n        <input type=\"text\" [(ngModel)]=\"username\" name=\"username\" class=\"form-control\" id=\"username\" placeholder=\"Enter Username\">\n      </div>\n      <div class=\"form-group\">\n        <label for=\"email\">Email</label>\n        <input type=\"email\" [(ngModel)]=\"email\" name=\"email\" class=\"form-control\" id=\"email\" aria-describedby=\"emailHelp\" placeholder=\"Enter Email\">\n        <small id=\"emailHelp\" class=\"form-text text-muted\">Strictly for Centennial College students only</small>\n      </div>\n      <div class=\"form-group\">\n        <label for=\"password\">Password</label>\n        <input type=\"password\" [(ngModel)]=\"password\" name=\"password\" class=\"form-control\" id=\"password\" placeholder=\" Enter Password\">\n      </div>\n      <input type=\"submit\" class=\"btn btn-primary\" value=\"Submit\">\n    </form>\n    </div>  \n    ");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\r\n    <h2 class=\"page-header\">Register</h2>\r\n    <form (submit)=\"onRegisterSubmit()\" >\r\n      <div class=\"form-group\">\r\n        <label for=\"name\">Name</label>\r\n        <input type=\"text\" [(ngModel)]=\"name\" name=\"name\" class=\"form-control\" id=\"name\" placeholder=\"Enter Name\">\r\n      </div>\r\n      <div class=\"form-group\">\r\n        <label for=\"username\">Student No.</label>\r\n        <input type=\"text\" [(ngModel)]=\"username\" name=\"username\" class=\"form-control\" id=\"username\" placeholder=\"Enter Username\">\r\n      </div>\r\n      <div class=\"form-group\">\r\n        <label for=\"email\">Email</label>\r\n        <input type=\"email\" [(ngModel)]=\"email\" name=\"email\" class=\"form-control\" id=\"email\" aria-describedby=\"emailHelp\" placeholder=\"Enter Email\">\r\n        <small id=\"emailHelp\" class=\"form-text text-muted\">Strictly for Centennial College students only</small>\r\n      </div>\r\n      <div class=\"form-group\">\r\n        <label for=\"password\">Password</label>\r\n        <input type=\"password\" [(ngModel)]=\"password\" name=\"password\" class=\"form-control\" id=\"password\" placeholder=\" Enter Password\">\r\n      </div>\r\n      <input type=\"submit\" class=\"btn btn-primary\" value=\"Submit\">\r\n    </form>\r\n    </div>  \r\n    ");
 
 /***/ }),
 
@@ -828,7 +828,7 @@ let LoginComponent = class LoginComponent {
         xmlHttp.send();
     }
     graphAPICallback(data) {
-        //document.getElementById("json").innerHTML = JSON.stringify(data, null, 2);
+        //document.getElementById("json").innerHTML = JSON.stringify(data, null, 2); 
     }
     authRedirectCallBack(error, response) {
         if (error) {
@@ -1114,7 +1114,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\sridh\Documents\College_Work\Studies\Semester 4\COMP 306 - API and Cloud computing\Lab\Project\forHeroku\login-app\reg-app\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\PC\centennial\fall 2019\cloud api\alternative\oauth-centennial-registration\reg-app\src\main.ts */"./src/main.ts");
 
 
 /***/ })

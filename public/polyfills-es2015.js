@@ -6370,8 +6370,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\sridh\Documents\College_Work\Studies\Semester 4\COMP 306 - API and Cloud computing\Lab\Project\forHeroku\login-app\reg-app\src\polyfills.ts */"./src/polyfills.ts");
-module.exports = __webpack_require__(/*! C:\Users\sridh\Documents\College_Work\Studies\Semester 4\COMP 306 - API and Cloud computing\Lab\Project\forHeroku\login-app\reg-app\node_modules\@angular-devkit\build-angular\src\angular-cli-files\models\jit-polyfills.js */"./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/jit-polyfills.js");
+__webpack_require__(/*! C:\Users\PC\centennial\fall 2019\cloud api\alternative\oauth-centennial-registration\reg-app\src\polyfills.ts */"./src/polyfills.ts");
+module.exports = __webpack_require__(/*! C:\Users\PC\centennial\fall 2019\cloud api\alternative\oauth-centennial-registration\reg-app\node_modules\@angular-devkit\build-angular\src\angular-cli-files\models\jit-polyfills.js */"./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/jit-polyfills.js");
 
 
 /***/ })
