@@ -276,7 +276,7 @@
           \******************************/
         /*! no static exports found */
         /***/ (function (module, exports, __webpack_require__) {
-            module.exports = __webpack_require__(/*! C:\Users\sridh\Documents\College_Work\Studies\Semester 4\COMP 306 - API and Cloud computing\Lab\git\reg-app\src\styles.css */ "./src/styles.css");
+            module.exports = __webpack_require__(/*! C:\Users\sridh\Documents\College_Work\Studies\Semester 4\COMP 306 - API and Cloud computing\Lab\Project\forPartB\final\oauth-centennial-registration\reg-app\src\styles.css */ "./src/styles.css");
             /***/ 
         })
     }, [[3, "runtime"]]]);
